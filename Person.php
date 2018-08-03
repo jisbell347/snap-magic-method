@@ -56,9 +56,9 @@ class Person {
 		if($newAge < 0) {
 			throw(new \InvalidArgumentException("Age cannot be less than 0"));
 		} elseif($newAge <= 18) {
-			throw (new \RangeException("hi caleb"));
+			echo "hi caleb";
 		}elseif($newAge > 118) {
-			throw(new \RangeException("captain @deepdivedylan"));
+			echo "captain @deepdivedylan";
 		}
 		$this->age = $newAge;
 	}
@@ -93,7 +93,7 @@ class Person {
 	}
 
 	public function __toString() {
-		return $this->name . " is " . $this->age . " years old";
+		return "<><td>" . $this->name . "</td><td>" . $this->age . "</td></tr>" ;
 	}
 }
 
