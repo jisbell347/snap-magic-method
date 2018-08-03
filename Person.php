@@ -93,7 +93,7 @@ class Person {
 	}
 
 	public function __toString() {
-		return "<><td>" . $this->name . "</td><td>" . $this->age . "</td></tr>" ;
+		return "<tr><td>" . $this->name . "</td><td>" . $this->age . "</td></tr>" ;
 	}
 }
 
